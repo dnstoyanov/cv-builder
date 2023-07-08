@@ -83,25 +83,61 @@
   "education": [
     {
       "level_of_education": "",
-      "degree": "Computer Sciences",
+      "degree": "Computer systems and technologies",
       "place": "'Angel Kanchev' University of Ruse",
       "location": "Ruse, Bulgaria",
       "start_date": "2002/09/01",
-      "end_date": "204/06/31"
+      "end_date": "2004/06/31"
     }
   ],
   "languages": [
-    {
-      "name": "English",
-      "level": "B2"
-    },
     {
       "name": "Bulgarian",
       "level": "Native"
     },
     {
+      "name": "English",
+      "level": "B2"
+    },
+    {
       "name": "Russian",
       "level": "C2"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Scrum Alliance Certified ScrumMaster®",
+      "organisation": "Scrum Alliance"
+    }
+  ],
+  "skills": [
+    {
+      "programmingSkills": [
+        "JavaScript",
+        "React",
+        "HTML",
+        "CSS",
+        "SASS",
+        "TypeScript"
+      ]
+    },
+    {
+      "additionalSkills": [
+        "Adobe Creative Suite",
+        "Git",
+        "Jira",
+        "Agile",
+        "Figma",
+        "Material UI"
+      ]
+    },
+    {
+      "softSkills": [
+        "Problem solving",
+        "Team Work Creativity",
+        " Communication",
+        " Self-Awareness"
+      ]
     }
   ],
   "additional_information": {
