@@ -18,7 +18,7 @@
       "end_date": "2023/07",
       "employment_type": "Full Time",
       "location": "Remote",
-      "job-description": [""],
+      "jobDescription": [""],
       "projects": [
         {
           "project_name": "Business Notification Center",
@@ -27,6 +27,13 @@
           "end_date": null,
           "project_description": [
             "BNC is a dedicated communication platform designed specifically for first responders, enabling seamless chat messaging and video calls among emergency personnel. This powerful app enhances real-time collaboration, coordination, and decision-making in critical situations."
+          ],
+          "projectResponsibilities": [
+            "Developed and implemented functionalities for creating new conversations between users.",
+            "Adjusted functionalities related to conversation management for seamless chat messaging, including editing conversations and adding or deleting users from them.",
+            "Created functionalities for creating and managing groups in the BNC App.",
+            "Implemented adjusted group functionalities for both the client and admin parts of the application.",
+            "Collaborated with the development team to integrate work effectively."
           ],
           "project_outcome": "The successful development and implementation of the BNC App will result in several significant outcomes, revolutionizing communication and collaboration among first responders in emergency situations.",
           "tech_stack": [
@@ -48,9 +55,29 @@
       "start_date": "2017/02",
       "end_date": "2021/04",
       "employment_type": "Full Time",
-      "location": "remote",
-      "job-description": [""],
-      "projects": []
+      "location": "Remote",
+      "jobDescription": [
+        "As a Web UI/UX Designer specializing in automotive repair shop websites, my focus is on creating exceptional user experiences and visually appealing interfaces. I collaborate with clients, project managers, and developers to translate business requirements into compelling designs that showcase the services and brand identity of the repair shops. By conducting user research and utilizing industry best practices, I design intuitive and engaging user interfaces. I also optimize navigation, ensure responsiveness, and conduct usability testing to deliver seamless experiences. My goal is to enhance online presence and drive customer engagement through visually stunning and user-friendly designs."
+      ],
+      "projects": [
+        {
+          "project_name": null,
+          "project_url": null,
+          "start_date": null,
+          "end_date": null,
+          "project_description": null,
+          "projectResponsibilities": [
+            "Translating business requirements into compelling designs",
+            "Conducting user research and applying industry best practices",
+            "Designing intuitive and engaging user interfaces",
+            "Conducting usability testing and iterating designs",
+            "Collaborating with clients, project managers, and developers"
+          ],
+          "project_outcome": null,
+          "tech_stack": ["Adobe Photoshop", "Adobe Illustrator", "Figma"],
+          "areas": ["Communication"]
+        }
+      ]
     }
   ],
   "education": [
