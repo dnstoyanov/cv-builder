@@ -1,8 +1,11 @@
+import { CVPage } from "./components/CVPage";
+import "./App.css";
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <span>CV</span>
+        <CVPage />
       </header>
     </div>
   );
