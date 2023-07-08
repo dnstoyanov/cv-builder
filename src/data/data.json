@@ -1,0 +1,161 @@
+{
+  "personal_information": {
+    "name": "Piotr Samol",
+    "current_position": "Senior Python Developer",
+    "image": "",
+    "github_url": "github.com/Avein",
+    "linkedin_url": "www.linkedin.com/in/piotr-samol",
+    "email_address": "samol.piotr@gmail.com",
+    "address": "Poznań, Poland",
+    "about_me": "6 years of experience scientist and self-taught programmer. During the master's degree and abroad research project learned how to solve problems as well as develop analytical and creative thinking. An honest, ambitious, open-minded person, eager to learn new things. Also, have good interpersonal and communication skills which are profitably used in teamwork. Strong skills in Python, FastAPI, Flask, Docker, Kubernetes, PostgreSQL, MySQL, Redis, RabbitMQ, Pandas, and Selenium."
+  },
+  "work_history": [
+    {
+      "position": "Senior Python Developer",
+      "company": "Idego Group",
+      "start_date": "2021/09",
+      "end_date": null,
+      "employment_type": "Full Time",
+      "location": "Remote",
+      "projects": [
+        {
+          "project_name": "Platform for digital building management (KUGU)",
+          "project_url": "https://www.kugu-home.com/en/homepage",
+          "start_date": "2021/09",
+          "end_date": null,
+          "project_description": ["Build efficient back-end features in Python", "Help design and implement functional requirements", "Integrate front-end components into applications", "Manage testing and bug fixes", "Codebase refactoring", "Automate consumption reports for IoT devices", "Data analysis and preparation of data pipelines", "Prepare technical documentation"],
+          "project_outcome": "A plug-and-play solution for building management, combining web platform, ML, and IoT to make property data available in real-time.",
+          "tech_stack": ["Python", "Flask", "FastAPI", "SQLAlchemy", "MySQL", "InfluxDB", "Docker", "Kubernetes", "AWS", "Pandas", "Numpy", "Redis", "REST/RESTful API's", "AWS", "RabbitMQ", "Data Pipelines"],
+          "areas": ["Data Analysis", "IoT"]
+        }
+      ]
+    },
+    {
+      "position": "Software Developer",
+      "company": "Flyps",
+      "start_date": "2018/03",
+      "end_date": "2021/08",
+      "employment_type": "Full Time",
+      "location": "Poznań, Poland",
+      "projects": [
+        {
+          "project_name": "Distributed Mailing Platform (Flyps)",
+          "project_url": "",
+          "start_date": "2018/03",
+          "end_date": "2018/12",
+          "project_description": ["Implementation of features in custom mailing delivery solution", "Gathering and analyzing statistical data", "“Automating the Boring Stuff with Python”", "Mailing tests automation", "Regression tests"],
+          "project_outcome": "Platform (Flyps) which utilizes the computing power of registered users to enable big-scale distributed systems available for business clients.",
+          "tech_stack": ["Python", "AsyncIO", "RabbitMQ", "PostgreSQL", "Redis", "Docker", "Selenium", "PyTest", "OpenCV"],
+          "areas": ["Data Analysis", "IoT"]
+        },
+        {
+          "project_name": "Trefix (FX Solutions)",
+          "project_url": "https://trefix.co/welcome",
+          "start_date": "2018/12",
+          "end_date": "2019/09",
+          "project_description": ["Architecture design and implementation of the backend side", "Close cooperation with clients and financial consultants", "Project team leading", "Application releases deployment"],
+          "project_outcome": "Currency Risk Management Application.",
+          "tech_stack": ["Python", "Flask", "SQLAlchemy", "Marshmallow", "PyTest", "Numpy", "Docker", "Kubernetes", "GitLab CI/CD", "PostgreSQL"],
+          "areas": ["Data Analysis", "IoT"]
+        },
+        {
+          "project_name": "Less_ (CountMe)",
+          "project_url": "https://less.app/",
+          "start_date": "2020/08",
+          "end_date": "2020/12",
+          "project_description": ["Implementation of CMS for web application Less.app", "Implementation of unfurl app for web application Less.app", "Verify and deploy programs and systems", "Troubleshoot, debug, and upgrade existing software"],
+          "project_outcome": "Successfully delivered second-hand platform.",
+          "tech_stack": ["Python", "Wagtail", "Django", "DRF", "Celery", "Docker"],
+          "areas": ["Data Analysis", "IoT"]
+        },
+        {
+          "project_name": "Smarthome AI",
+          "project_url": "",
+          "start_date": "2020/06",
+          "end_date": "2020/08",
+          "project_description": ["Build application managing IoT solutions", "Integrate the application with machine learning models", "Gather and evaluate users' habits data to improve the machine learning algorithm", "Interim team leading"],
+          "project_outcome": "Application to manage home IoT devices. Powered by a machine learning algorithm, the application uses users' data to learn their habits and based on that recommends improvements.",
+          "tech_stack": ["Python", "Flask", "Docker", "SQLAlchemy", "PostgreSQL", "REST/RESTful API's"],
+          "areas": ["Data Analysis", "IoT"]
+        },
+        {
+          "project_name": "Take&GO (Surge Cloud)",
+          "project_url": "",
+          "start_date": "2019/10",
+          "end_date": "2020/06",
+          "project_description": ["Implementation of automation tests", "Features implemented in Odoo templating system", "Regression testing", "Mobile app testing"],
+          "project_outcome": "The fully autonomous store was delivered successfully.",
+          "tech_stack": ["Python", "PyTest", "Odoo", "Redis", "RabbitMQ", "REST/RESTful API's"],
+          "areas": ["Data Analysis", "IoT"]
+        },
+        {
+          "project_name": "MobiQe",
+          "project_url": "https://tredeciminnovation.pl/projekt/mobiqe/",
+          "start_date": "2021/01",
+          "end_date": "2021/03",
+          "project_description": ["Implementation of API which creates and predicts an output based on a Machine Learning model", "Work with developers to design algorithms and flowcharts", "Produce clean, efficient code based on specifications", "Integrate software components and third-party programs"],
+          "project_outcome": "Intelligent tool based on optimization algorithms and Machine Learning solutions, streamlining the processes of moving with electrically assisted cargo bikes as part of an effective parcel delivery model.",
+          "tech_stack": ["Python", "FastAPI", "Pydantic", "Pandas", "Numpy", "REST/RESTful API's"],
+          "areas": ["Data Analysis", "IoT"]
+        },
+        {
+          "project_name": "Spuds Unearthed",
+          "project_url": "https://store.steampowered.com/app/909570/Spuds_Unearthed/",
+          "start_date": "2021/02",
+          "end_date": "2021/08",
+          "project_description": ["Build AI framework for Spuds Unearthed game in Python", "Work with developers to design algorithms and flowcharts,", "Produce clean, efficient code based on specifications,", "Lead the team of developers"],
+          "project_outcome": "A modular AI framework easily adaptable for different games. The algorithms learn and improve based on data from previously played games by users.",
+          "tech_stack": ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "AWS S3", "Docker", "Kubernetes",  "REST/RESTful API's"],
+          "areas": ["Data Analysis", "IoT"]
+        }
+      ]
+    },
+    {
+      "position": "Junior QA Engineer",
+      "company": "Egnyte",
+      "start_date": "2016/10",
+      "end_date": "2018/03",
+      "employment_type": "Full Time",
+      "location": "Poznań, Poland",
+      "projects": [
+        {
+          "project_name": "DesktopSync App",
+          "project_url": "https://www.kugu-home.com/en/homepage",
+          "start_date": "2016/10",
+          "end_date": "2018/03",
+          "project_description": ["Fixing outdated tests", "Implementing tests for new features", "Refactoring the internal test framework", "Preparing manual test cases", "Creating a performance test framework", "Creating visualization for performance tests", "Designing and implementing tests, debugging, and defining corrective actions,"],
+          "project_outcome": "Automation tests framework for DesktopSync App.",
+          "tech_stack": ["Python", "Nose", "Jenkins", "Selenium", "Plotly", "Bokeh"],
+          "areas": ["Data Analysis", "IoT"]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "level_of_education": "Bechelors degree",
+      "degree": "Medical Physics",
+      "place": "University of Adam Mickiewicz",
+      "start_date": "2009/09/01",
+      "end_date": "2013/06/31"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "B2"
+    },
+    {
+      "name": "Polish",
+      "level": "Native"
+    }
+  ],
+  "additional_information": {
+    "publications": {
+    },
+    "cloud_certifications": {
+    },
+    "certifications_and_awards": {
+    }
+  }
+}
