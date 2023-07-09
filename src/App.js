@@ -1,5 +1,5 @@
-import { CVPage } from "./components/CVPage";
 import "./App.css";
+import CVPage from "./components/CVPage";
 
 function App() {
   return (

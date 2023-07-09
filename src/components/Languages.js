@@ -1,23 +1,24 @@
 import data from "../data/data.json";
-import { Stack } from "@mui/material";
 
 const Languages = () => {
   return (
     <>
       {data.languages.map((item) => (
-        <Stack>
-          <Stack direction="row" justifyContent="space-between" marginTop={3}>
-            <Stack
-              sx={{
-                fontSize: "18px",
-                color: "#ebb400",
-              }}
-            >
+        <div key={item.id}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              marginTop: "24px",
+            }}
+          >
+            <div style={{ fontSize: "18px", color: "#ebb400" }}>
               {item.name}
-            </Stack>
-            {item.level}
-          </Stack>
-        </Stack>
+            </div>
+            <div>{item.level}</div>
+          </div>
+        </div>
       ))}
     </>
   );

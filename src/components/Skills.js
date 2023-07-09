@@ -1,11 +1,9 @@
 import data from "../data/data.json";
-import { Stack } from "@mui/material";
-
-import { FaJira, FaTasks, FaGithub } from "react-icons/fa";
-import { SiMui, SiAdobe } from "react-icons/si";
-import { BiLogoFigma } from "react-icons/bi";
 
 import {
+  FaJira,
+  FaTasks,
+  FaGithub,
   FaReact,
   FaJs,
   FaHtml5,
@@ -13,6 +11,8 @@ import {
   FaSass,
   FaCode,
 } from "react-icons/fa";
+import { SiMui, SiAdobe } from "react-icons/si";
+import { BiLogoFigma } from "react-icons/bi";
 import { SiTypescript } from "react-icons/si";
 
 const Skills = () => {
@@ -56,43 +56,70 @@ const Skills = () => {
       <SiMui size={16} style={{ color: "#ebb400", marginRight: "4px" }} />
     ),
   };
+
   return (
     <>
       {data.skills.map((skill, index) => (
         <div key={index}>
           {skill.programmingSkills && (
-            <Stack marginTop={3}>
-              <Stack sx={{ color: "#ebb400" }}>Programming Skills</Stack>
-              <Stack direction="row" spacing={3} marginTop={1}>
+            <div style={{ marginTop: "24px" }}>
+              <div style={{ color: "#ebb400" }}>Programming Skills</div>
+              <div style={{ display: "flex", marginTop: "8px" }}>
                 {skill.programmingSkills.map((item) => (
-                  <Stack key={item} direction="row">
-                    {skillIcons[item] || <FaCode />} {item}
-                  </Stack>
+                  <div
+                    key={item}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginRight: "16px",
+                    }}
+                  >
+                    {skillIcons[item] || (
+                      <FaCode
+                        size={16}
+                        style={{ color: "#ebb400", marginRight: "4px" }}
+                      />
+                    )}{" "}
+                    {item}
+                  </div>
                 ))}
-              </Stack>
-            </Stack>
+              </div>
+            </div>
           )}
           {skill.additionalSkills && (
-            <Stack marginTop={3}>
-              <Stack sx={{ color: "#ebb400" }}>Additional Skills</Stack>
-              <Stack direction="row" spacing={3} marginTop={1}>
+            <div style={{ marginTop: "24px" }}>
+              <div style={{ color: "#ebb400" }}>Additional Skills</div>
+              <div style={{ display: "flex", marginTop: "8px" }}>
                 {skill.additionalSkills.map((item) => (
-                  <Stack key={item} direction="row">
-                    {additionalSkillsIcons[item] || <FaCode />} {item}
-                  </Stack>
+                  <div
+                    key={item}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginRight: "16px",
+                    }}
+                  >
+                    {additionalSkillsIcons[item] || (
+                      <FaCode
+                        size={16}
+                        style={{ color: "#ebb400", marginRight: "4px" }}
+                      />
+                    )}{" "}
+                    {item}
+                  </div>
                 ))}
-              </Stack>
-            </Stack>
+              </div>
+            </div>
           )}
           {skill.softSkills && (
-            <Stack marginTop={3}>
-              <Stack sx={{ color: "#ebb400" }}>Soft Skills</Stack>
-              <Stack direction="row" spacing={3} marginTop={1}>
+            <div style={{ marginTop: "24px" }}>
+              <div style={{ color: "#ebb400" }}>Soft Skills</div>
+              <div style={{ display: "flex", marginTop: "8px" }}>
                 {skill.softSkills.map((item) => (
-                  <Stack key={item}>{item}</Stack>
+                  <div key={item}>{item}</div>
                 ))}
-              </Stack>
-            </Stack>
+              </div>
+            </div>
           )}
         </div>
       ))}

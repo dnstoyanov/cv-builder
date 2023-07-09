@@ -13,7 +13,7 @@ body {
   /* Styles for better appearance on screens only -- are reset to defaults in print styles later */
 
   /* Use a non-white background color to make the content areas stick out from the full page box */
-  background-color: #313131;
+  /* background-color: #313131; */
 }
 
 a {

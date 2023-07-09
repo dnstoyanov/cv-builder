@@ -10,10 +10,11 @@ import Training from "./Training";
 import Skills from "./Skills";
 import Languages from "./Languages";
 import Education from "./Education";
+import Certifications from "./Certifications";
 
 export const CVPage = () => {
   return (
-    <Box padding={5}>
+    <Box padding={5} sx={{ backgroundColor: "#313131" }}>
       <Grid container>
         <Grid item xs={12}>
           <Stack direction="row" alignContent="center" alignItems="center">
@@ -137,20 +138,7 @@ export const CVPage = () => {
               borderBottom: "0.5px solid white",
             }}
           />
-          {data.certifications.map((item) => (
-            <Stack>
-              <Stack
-                sx={{
-                  fontSize: "18px",
-                  color: "#ebb400",
-                }}
-                marginTop={3}
-              >
-                {item.name}
-              </Stack>
-              {item.organisation}
-            </Stack>
-          ))}
+          <Certifications />
           <Typography variant="h5" marginTop={10}>
             Languages
           </Typography>

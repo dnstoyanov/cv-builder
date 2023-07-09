@@ -1,5 +1,4 @@
 import data from "../data/data.json";
-import { Stack, Box, Typography } from "@mui/material";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
@@ -7,40 +6,56 @@ const Education = () => {
   return (
     <>
       {data.education.map((item) => (
-        <Stack>
-          <Stack direction="row" justifyContent="space-between" marginTop={3}>
-            <Stack
-              sx={{
+        <div key={item.id}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+            }}
+          >
+            <div
+              style={{
                 fontSize: "18px",
                 color: "#ebb400",
                 textTransform: "uppercase",
+                marginTop: "24px",
               }}
             >
               {item.place}
-            </Stack>
-            <Stack direction="row" alignItems="flex-start">
-              <FaRegCalendarAlt
-                size={14}
-                style={{ color: "#ebb400", marginRight: "4px" }}
-              />
-              <Stack sx={{ fontSize: "14px" }}>{item.start_date}</Stack>
-              <Box mx={0.4} />
-              <Typography variant="body1"> - </Typography>
-              <Box mx={0.4} />
-              <Stack sx={{ fontSize: "14px" }}>{item.end_date}</Stack>
-              <FaLocationDot
-                size={14}
-                style={{
-                  color: "#ebb400",
-                  marginRight: "4px",
-                  marginLeft: "35px",
-                }}
-              />
-              <Stack sx={{ fontSize: "14px" }}>{item.location}</Stack>
-            </Stack>
-          </Stack>
-          <Stack>{item.degree}</Stack>
-        </Stack>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "flex-start",
+                marginTop: "24px",
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <FaRegCalendarAlt
+                  size={14}
+                  style={{ color: "#ebb400", marginRight: "4px" }}
+                />
+                <span style={{ fontSize: "14px" }}>{item.start_date}</span>
+                <span style={{ margin: "0 4px" }}>-</span>
+                <span style={{ fontSize: "14px" }}>{item.end_date}</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <FaLocationDot
+                  size={14}
+                  style={{
+                    color: "#ebb400",
+                    marginRight: "4px",
+                    marginLeft: "35px",
+                  }}
+                />
+                <span style={{ fontSize: "14px" }}>{item.location}</span>
+              </div>
+            </div>
+          </div>
+          <div style={{ marginTop: "8px" }}>{item.degree}</div>
+        </div>
       ))}
     </>
   );

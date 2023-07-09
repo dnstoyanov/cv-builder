@@ -1,5 +1,4 @@
 import data from "../data/data.json";
-import { Box, Stack, Typography } from "@mui/material";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
@@ -7,79 +6,108 @@ const WorkExp = () => {
   return (
     <>
       {data.work_history.map((item) => (
-        <Stack direction="column">
-          <Stack direction="row" justifyContent="space-between" marginTop={3}>
-            <Stack sx={{ fontSize: "18px" }}>{item.position}</Stack>
-            <Stack direction="row" alignItems="center">
-              <FaRegCalendarAlt
-                size={14}
-                style={{ color: "#ebb400", marginRight: "4px" }}
-              />
-              <Stack sx={{ fontSize: "14px" }}>{item.start_date}</Stack>
-              <Box mx={0.4} />
-              <Typography variant="body1"> - </Typography>
-              <Box mx={0.4} />
-              <Stack sx={{ fontSize: "14px" }}>{item.end_date}</Stack>
-              <FaLocationDot
-                size={14}
+        <div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              marginTop: "24px",
+            }}
+          >
+            <div style={{ fontSize: "18px" }}>{item.position}</div>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <span style={{ fontSize: "14px", marginRight: "4px" }}>
+                <FaRegCalendarAlt
+                  size={14}
+                  style={{
+                    color: "#ebb400",
+                    marginRight: "4px",
+                    marginLeft: "35px",
+                  }}
+                />
+              </span>
+              <span style={{ fontSize: "14px" }}>{item.start_date}</span>
+              <span style={{ margin: "0 4px" }}>-</span>
+              <span style={{ fontSize: "14px" }}>{item.end_date}</span>
+              <span
                 style={{
                   color: "#ebb400",
                   marginRight: "4px",
                   marginLeft: "35px",
                 }}
-              />
-              <Stack sx={{ fontSize: "14px" }}>{item.location}</Stack>
-            </Stack>
-          </Stack>
-          <Stack
-            sx={{
+              >
+                <FaLocationDot
+                  size={14}
+                  style={{
+                    color: "#ebb400",
+                    marginRight: "4px",
+                    marginLeft: "35px",
+                  }}
+                />
+              </span>
+              <span style={{ fontSize: "14px" }}>{item.location}</span>
+            </div>
+          </div>
+          <div
+            style={{
               fontSize: "18px",
               fontWeight: "bold",
               color: "#ebb400",
               textTransform: "uppercase",
+              marginTop: "16px",
             }}
           >
             {item.company}
-          </Stack>
-          <Stack marginTop={4}>{item.jobDescription}</Stack>
+          </div>
+          <div style={{ marginTop: "16px" }}>{item.jobDescription}</div>
           {item.projects.map((project) => (
-            <Stack direction="column" spacing={2} marginTop={2}>
-              <Stack sx={{ textTransform: "uppercase", fontWeight: "bold" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                marginTop: "16px",
+              }}
+            >
+              <div style={{ textTransform: "uppercase", fontWeight: "bold" }}>
                 {project.project_name}
-              </Stack>
-              <Stack>{project.project_description}</Stack>
-              <Stack>{project.project_outcome}</Stack>
-              <Stack fontWeight="bold">Project Responsibilities</Stack>
+              </div>
+              <div style={{ marginTop: "15px" }}>
+                {project.project_description}
+              </div>
+              <div>{project.project_outcome}</div>
+              <div style={{ fontWeight: "bold", marginTop: "15px" }}>
+                Project Responsibilities
+              </div>
               <ul>
                 {project.projectResponsibilities.map((responsibility) => (
                   <li key={responsibility}>{responsibility}</li>
                 ))}
               </ul>
-              <Stack direction="row">
+              <div style={{ display: "flex" }}>
                 {project.tech_stack.map((tech) => (
-                  <Stack
+                  <div
                     key={tech}
-                    sx={{
+                    style={{
                       border: "2px solid #ebb400",
-                      p: 0.7,
-                      mr: 2,
+                      padding: "0.7rem",
+                      marginRight: "8px",
                       borderRadius: "20px",
                     }}
                   >
                     {tech}
-                  </Stack>
+                  </div>
                 ))}
-              </Stack>
-            </Stack>
+              </div>
+            </div>
           ))}
-          <Stack
-            sx={{
-              marginTop: 4,
+          <div
+            style={{
+              marginTop: "16px",
               height: "0",
               borderBottom: "0.5px dashed white",
             }}
-          />
-        </Stack>
+          ></div>
+        </div>
       ))}
     </>
   );

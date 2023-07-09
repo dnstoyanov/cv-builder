@@ -1,22 +1,17 @@
 import data from "../data/data.json";
-import { Stack } from "@mui/material";
 
 const Training = () => {
   return (
     <>
       {data.training.map((course) => (
-        <Stack>
-          <Stack
-            sx={{
-              fontSize: "18px",
-              color: "#ebb400",
-            }}
-            marginTop={3}
+        <div key={course.id}>
+          <div
+            style={{ fontSize: "18px", color: "#ebb400", marginTop: "24px" }}
           >
             {course.name}
-          </Stack>
-          {course.description}
-        </Stack>
+          </div>
+          <div>{course.description}</div>
+        </div>
       ))}
     </>
   );
