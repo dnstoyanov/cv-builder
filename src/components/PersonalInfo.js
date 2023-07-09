@@ -12,9 +12,9 @@ const PersonalInfo = () => {
         src={ProfilePic}
         alt="Profile"
         style={{
-          width: "300px",
+          width: "200px",
           borderRadius: "50%",
-          height: "300px",
+          height: "200px",
           border: "18px solid #444",
           WebkitBoxShadow: "0 0 25px 0 rgba(0, 0, 0, 0.8)",
           MozBoxShadow: "0 0 25px 0 rgba(0, 0, 0, 0.8)",
@@ -35,7 +35,13 @@ const PersonalInfo = () => {
         <p style={{ marginTop: "24px" }}>
           {data.personal_information.about_me}
         </p>
-        <div style={{ display: "flex", marginTop: "16px" }}>
+        <div
+          style={{
+            display: "flex",
+            marginTop: "16px",
+            alignItems: "flex-start",
+          }}
+        >
           <div
             style={{
               display: "flex",

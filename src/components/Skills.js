@@ -116,7 +116,9 @@ const Skills = () => {
               <div style={{ color: "#ebb400" }}>Soft Skills</div>
               <div style={{ display: "flex", marginTop: "8px" }}>
                 {skill.softSkills.map((item) => (
-                  <div key={item}>{item}</div>
+                  <div key={item} style={{ marginRight: "18px" }}>
+                    {item}
+                  </div>
                 ))}
               </div>
             </div>

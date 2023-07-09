@@ -10,12 +10,19 @@ import PersonalInfo from "./PersonalInfo";
 
 export const CVPage = () => {
   return (
-    <div style={{ padding: "70px", backgroundColor: "#313131" }}>
-      <div>
+    <div id="cv-page" style={{ padding: "40px", backgroundColor: "#313131" }}>
+      <div style={{ width: "100%" }}>
         <PersonalInfo />
       </div>
-      <div style={{ marginTop: "10px", display: "flex", gap: "40px" }}>
-        <div style={{ flex: "0 0 66.66%" }}>
+      <div
+        style={{
+          width: "100%",
+          marginTop: "10px",
+          display: "flex",
+          gap: "2%",
+        }}
+      >
+        <div style={{ flex: "0 0 67%" }}>
           <h2>Professional Experience</h2>
           <hr
             style={{
@@ -39,7 +46,7 @@ export const CVPage = () => {
             <Training />
           </div>
         </div>
-        <div style={{ flex: "0 0 33.33%" }}>
+        <div style={{ flex: "0 0 31%" }}>
           <h2>Skills</h2>
           <hr
             style={{
