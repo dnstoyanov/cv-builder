@@ -18,42 +18,42 @@ import { SiTypescript } from "react-icons/si";
 const Skills = () => {
   const skillIcons = {
     JavaScript: (
-      <FaJs size={16} style={{ color: "#ebb400", marginRight: "4px" }} />
+      <FaJs size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
     React: (
-      <FaReact size={16} style={{ color: "#ebb400", marginRight: "4px" }} />
+      <FaReact size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
     HTML: (
-      <FaHtml5 size={16} style={{ color: "#ebb400", marginRight: "4px" }} />
+      <FaHtml5 size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
     CSS: (
-      <FaCss3Alt size={16} style={{ color: "#ebb400", marginRight: "4px" }} />
+      <FaCss3Alt size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
-    SASS: <FaSass size={16} style={{ color: "#ebb400", marginRight: "4px" }} />,
+    SASS: <FaSass size={16} style={{ color: "#afcf46", marginRight: "4px" }} />,
     TypeScript: (
       <SiTypescript
         size={16}
-        style={{ color: "#ebb400", marginRight: "4px" }}
+        style={{ color: "#afcf46", marginRight: "4px" }}
       />
     ),
   };
 
   const additionalSkillsIcons = {
     "Adobe Creative Suite": (
-      <SiAdobe size={16} style={{ color: "#ebb400", marginRight: "4px" }} />
+      <SiAdobe size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
     Git: (
-      <FaGithub size={16} style={{ color: "#ebb400", marginRight: "4px" }} />
+      <FaGithub size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
-    Jira: <FaJira size={16} style={{ color: "#ebb400", marginRight: "4px" }} />,
+    Jira: <FaJira size={16} style={{ color: "#afcf46", marginRight: "4px" }} />,
     Agile: (
-      <FaTasks size={16} style={{ color: "#ebb400", marginRight: "4px" }} />
+      <FaTasks size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
     Figma: (
-      <BiLogoFigma size={16} style={{ color: "#ebb400", marginRight: "4px" }} />
+      <BiLogoFigma size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
     "Material UI": (
-      <SiMui size={16} style={{ color: "#ebb400", marginRight: "4px" }} />
+      <SiMui size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
   };
 
@@ -63,7 +63,9 @@ const Skills = () => {
         <div key={index}>
           {skill.programmingSkills && (
             <div style={{ marginTop: "24px" }}>
-              <div style={{ color: "#ebb400" }}>Programming Skills</div>
+              <div style={{ color: "#afcf46", fontWeight: "bold" }}>
+                Programming Skills
+              </div>
               <div style={{ display: "flex", marginTop: "8px" }}>
                 {skill.programmingSkills.map((item) => (
                   <div
@@ -77,7 +79,7 @@ const Skills = () => {
                     {skillIcons[item] || (
                       <FaCode
                         size={16}
-                        style={{ color: "#ebb400", marginRight: "4px" }}
+                        style={{ color: "#afcf46", marginRight: "4px" }}
                       />
                     )}{" "}
                     {item}
@@ -88,21 +90,23 @@ const Skills = () => {
           )}
           {skill.additionalSkills && (
             <div style={{ marginTop: "24px" }}>
-              <div style={{ color: "#ebb400" }}>Additional Skills</div>
+              <div style={{ color: "#afcf46", fontWeight: "bold" }}>
+                Additional Skills
+              </div>
               <div style={{ display: "flex", marginTop: "8px" }}>
                 {skill.additionalSkills.map((item) => (
                   <div
                     key={item}
                     style={{
                       display: "flex",
-                      alignItems: "center",
+                      alignItems: "flex-start",
                       marginRight: "16px",
                     }}
                   >
                     {additionalSkillsIcons[item] || (
                       <FaCode
                         size={16}
-                        style={{ color: "#ebb400", marginRight: "4px" }}
+                        style={{ color: "#afcf46", marginRight: "4px" }}
                       />
                     )}{" "}
                     {item}
@@ -113,10 +117,18 @@ const Skills = () => {
           )}
           {skill.softSkills && (
             <div style={{ marginTop: "24px" }}>
-              <div style={{ color: "#ebb400" }}>Soft Skills</div>
-              <div style={{ display: "flex", marginTop: "8px" }}>
+              <div style={{ color: "#afcf46", fontWeight: "bold" }}>
+                Soft Skills
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  marginTop: "8px",
+                  alignItems: "flex-start",
+                }}
+              >
                 {skill.softSkills.map((item) => (
-                  <div key={item} style={{ marginRight: "18px" }}>
+                  <div key={item} style={{ width: "25%", marginRight: "15px" }}>
                     {item}
                   </div>
                 ))}

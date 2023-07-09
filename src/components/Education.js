@@ -17,7 +17,7 @@ const Education = () => {
             <div
               style={{
                 fontSize: "18px",
-                color: "#ebb400",
+                color: "#afcf46",
                 textTransform: "uppercase",
                 marginTop: "24px",
               }}
@@ -35,22 +35,11 @@ const Education = () => {
               <div style={{ display: "flex", alignItems: "center" }}>
                 <FaRegCalendarAlt
                   size={14}
-                  style={{ color: "#ebb400", marginRight: "4px" }}
+                  style={{ color: "#afcf46", marginRight: "4px" }}
                 />
                 <span style={{ fontSize: "14px" }}>{item.start_date}</span>
                 <span style={{ margin: "0 4px" }}>-</span>
                 <span style={{ fontSize: "14px" }}>{item.end_date}</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <FaLocationDot
-                  size={14}
-                  style={{
-                    color: "#ebb400",
-                    marginRight: "4px",
-                    marginLeft: "35px",
-                  }}
-                />
-                <span style={{ fontSize: "14px" }}>{item.location}</span>
               </div>
             </div>
           </div>

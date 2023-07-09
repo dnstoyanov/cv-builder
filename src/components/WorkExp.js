@@ -20,7 +20,7 @@ const WorkExp = () => {
                 <FaRegCalendarAlt
                   size={14}
                   style={{
-                    color: "#ebb400",
+                    color: "#afcf46",
                     marginRight: "4px",
                     marginLeft: "35px",
                   }}
@@ -31,7 +31,7 @@ const WorkExp = () => {
               <span style={{ fontSize: "14px" }}>{item.end_date}</span>
               <span
                 style={{
-                  color: "#ebb400",
+                  color: "#afcf46",
                   marginRight: "4px",
                   marginLeft: "35px",
                 }}
@@ -39,7 +39,7 @@ const WorkExp = () => {
                 <FaLocationDot
                   size={14}
                   style={{
-                    color: "#ebb400",
+                    color: "#afcf46",
                     marginRight: "4px",
                     marginLeft: "35px",
                   }}
@@ -52,7 +52,7 @@ const WorkExp = () => {
             style={{
               fontSize: "18px",
               fontWeight: "bold",
-              color: "#ebb400",
+              color: "#afcf46",
               textTransform: "uppercase",
               marginTop: "16px",
             }}
@@ -88,10 +88,13 @@ const WorkExp = () => {
                   <div
                     key={tech}
                     style={{
-                      border: "2px solid #ebb400",
+                      border: "2px solid #afcf46",
                       padding: "0.7rem",
                       marginRight: "8px",
                       borderRadius: "20px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
                     }}
                   >
                     {tech}

@@ -10,7 +10,18 @@ import PersonalInfo from "./PersonalInfo";
 
 export const CVPage = () => {
   return (
-    <div id="cv-page" style={{ padding: "40px", backgroundColor: "#313131" }}>
+    <div
+      id="cv-page"
+      style={{
+        padding: "20px",
+        backgroundColor: "#313131",
+        width: "210mm",
+        minHeight: "297mm",
+        marginLeft: "auto",
+        marginRight: "auto",
+        boxSizing: "border-box",
+      }}
+    >
       <div style={{ width: "100%" }}>
         <PersonalInfo />
       </div>

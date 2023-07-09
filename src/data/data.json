@@ -14,8 +14,8 @@
     {
       "position": "Junior Front-End Developer",
       "company": "NexGen LLC",
-      "start_date": "2023/01",
-      "end_date": "2023/07",
+      "start_date": "01/2023",
+      "end_date": "07/2023",
       "employment_type": "Full Time",
       "location": "Remote",
       "jobDescription": [""],
@@ -43,7 +43,7 @@
             "HTML",
             "CSS",
             "REST/RESTful API's",
-            "Redux Toolkit"
+            "Redux"
           ],
           "areas": ["Communication"]
         }
@@ -52,8 +52,8 @@
     {
       "position": "Web Designer",
       "company": "Kukui Corporation",
-      "start_date": "2017/02",
-      "end_date": "2021/04",
+      "start_date": "02/2017",
+      "end_date": "04/2021",
       "employment_type": "Full Time",
       "location": "Remote",
       "jobDescription": [
@@ -84,10 +84,10 @@
     {
       "level_of_education": "",
       "degree": "Computer systems and technologies",
-      "place": "'Angel Kanchev' University of Ruse",
+      "place": "Angel Kanchev - University of Ruse",
       "location": "Ruse, Bulgaria",
-      "start_date": "2002/09/01",
-      "end_date": "2004/06/31"
+      "start_date": "01/09/2002",
+      "end_date": "31/06/2004"
     }
   ],
   "languages": [
@@ -148,7 +148,8 @@
     {
       "softSkills": [
         "Problem solving",
-        "Team Work Creativity",
+        "Team Work",
+        "Creativity",
         " Communication",
         " Self-Awareness"
       ]

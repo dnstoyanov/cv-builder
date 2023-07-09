@@ -1,5 +1,4 @@
 import data from "../data/data.json";
-import ProfilePic from "../assets/images/ffs.jpg";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
@@ -8,50 +7,55 @@ const PersonalInfo = () => {
     <div
       style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
     >
-      <img
-        src={ProfilePic}
-        alt="Profile"
+      <div
         style={{
           width: "200px",
-          borderRadius: "50%",
           height: "200px",
+          borderRadius: "50%",
           border: "18px solid #444",
           WebkitBoxShadow: "0 0 25px 0 rgba(0, 0, 0, 0.8)",
           MozBoxShadow: "0 0 25px 0 rgba(0, 0, 0, 0.8)",
           boxShadow: "0 0 25px 0 rgba(0, 0, 0, 0.8)",
+          backgroundColor: "#fff",
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
+          alignItems: "flex-start",
+          flexShrink: 0,
+          // backgroundImage: 'url("https://i.ibb.co/zfVgx9N/ffs.jpg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
-      />
+      ></div>
 
       <div style={{ marginLeft: "32px" }}>
-        <h1 style={{ fontWeight: "bold", fontSize: "2.5rem" }}>
+        <h1
+          style={{ fontWeight: "bold", fontSize: "2.5rem", marginTop: "20px" }}
+        >
           {data.personal_information.name}
         </h1>
-        <h4 style={{ fontSize: "1.5rem" }}>
+        <h4 style={{ fontSize: "1.5rem", color: "#949494" }}>
           {data.personal_information.current_position}
         </h4>
-        <p style={{ marginTop: "24px" }}>
+        <p style={{ marginTop: "20px" }}>
           {data.personal_information.about_me}
         </p>
         <div
           style={{
             display: "flex",
-            marginTop: "16px",
+            marginTop: "26px",
             alignItems: "flex-start",
           }}
         >
           <div
             style={{
               display: "flex",
-              alignItems: "center",
+              alignItems: "flex-start",
               marginRight: "16px",
             }}
           >
             <FaGithub
               size={25}
-              style={{ color: "#ebb400", marginRight: "8px" }}
+              style={{ color: "#afcf46", marginRight: "8px" }}
             />
             <a
               href={data.personal_information.github_url}
@@ -64,13 +68,13 @@ const PersonalInfo = () => {
           <div
             style={{
               display: "flex",
-              alignItems: "center",
+              alignItems: "flex-start",
               marginRight: "16px",
             }}
           >
             <FaLinkedin
               size={25}
-              style={{ color: "#ebb400", marginRight: "8px" }}
+              style={{ color: "#afcf46", marginRight: "8px" }}
             />
             <a
               href={data.personal_information.linkedin_url}
@@ -80,10 +84,10 @@ const PersonalInfo = () => {
               {data.personal_information.linkedin_url}
             </a>
           </div>
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div style={{ display: "flex", alignItems: "flex-start" }}>
             <FiMail
               size={25}
-              style={{ color: "#ebb400", marginRight: "8px" }}
+              style={{ color: "#afcf46", marginRight: "8px" }}
             />
             <a
               href={`mailto:${data.personal_information.email_address}`}

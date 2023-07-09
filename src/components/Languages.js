@@ -13,7 +13,7 @@ const Languages = () => {
               marginTop: "24px",
             }}
           >
-            <div style={{ fontSize: "18px", color: "#ebb400" }}>
+            <div style={{ fontSize: "18px", color: "#afcf46" }}>
               {item.name}
             </div>
             <div>{item.level}</div>
