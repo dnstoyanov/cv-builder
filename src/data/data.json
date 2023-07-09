@@ -26,7 +26,7 @@
           "start_date": "2023/01",
           "end_date": null,
           "project_description": [
-            "BNC is a dedicated communication platform designed specifically for first responders, enabling seamless chat messaging and video calls among emergency personnel. This powerful app enhances real-time collaboration, coordination, and decision-making in critical situations."
+            "BNC was a dedicated communication platform designed specifically for first responders, enabling seamless chat messaging and video calls among emergency personnel. This powerful app enhances real-time collaboration, coordination, and decision-making in critical situations."
           ],
           "projectResponsibilities": [
             "Developed and implemented functionalities for creating new conversations between users.",
@@ -108,6 +108,20 @@
     {
       "name": "Scrum Alliance Certified ScrumMaster®",
       "organisation": "Scrum Alliance"
+    }
+  ],
+  "training": [
+    {
+      "name": "SoftServe Academy - ReactSelfPaced",
+      "description": "Practical skills for the development of SPA using ReactJS - JSX syntax, working with requests and Promises, splitting an application into components, using React Router, Hooks, Context API, Redux Toolkit, Material UI, linters, React Hook Form"
+    },
+    {
+      "name": "Software Univesity 2021: ReactJS",
+      "description": "Knowledge of Single Page Applications using ReactJS - JSX syntax, working with requests and Promises, splitting an application intocomponents, routing and validating  forms, React Hooks and the Context API"
+    },
+    {
+      "name": "Software Univesity2021 JS: Basic to Advanced",
+      "description": "Gained a solid foundation in JavaScript, covering syntax, variables, functions, and DOM manipulation. You have advanced to more complex topics like asynchronous programming, closures, and modular programming. "
     }
   ],
   "skills": [
