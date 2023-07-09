@@ -1,22 +1,18 @@
 html,
 body {
-  /* Reset the document's margin values */
   margin: 0;
-  /* Reset the document's padding values */
   padding: 0;
-  /* Use the platform's native font as the default */
   font-family: "Roboto", sans-serif;
-  /* Define a reasonable base font size */
   font-size: 12pt;
   color: #e0e0e0;
-
-  /* Styles for better appearance on screens only -- are reset to defaults in print styles later */
-
-  /* Use a non-white background color to make the content areas stick out from the full page box */
-  /* background-color: #313131; */
+  background-color: #313131;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h2 {
+  margin-top: 60px;
 }

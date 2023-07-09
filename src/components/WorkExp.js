@@ -102,7 +102,7 @@ const WorkExp = () => {
           ))}
           <div
             style={{
-              marginTop: "16px",
+              marginTop: "36px",
               height: "0",
               borderBottom: "0.5px dashed white",
             }}
