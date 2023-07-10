@@ -1,6 +1,7 @@
 import data from "../data/data.json";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import Photo from "../assets/images/FFS.png";
 
 const PersonalInfo = () => {
   return (
@@ -21,7 +22,7 @@ const PersonalInfo = () => {
           justifyContent: "center",
           alignItems: "flex-start",
           flexShrink: 0,
-          // backgroundImage: 'url("https://i.ibb.co/zfVgx9N/ffs.jpg")',
+          backgroundImage: `url(${Photo})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
