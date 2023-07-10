@@ -1,18 +1,13 @@
 {
   "files": {
-    "main.css": "/cv-builder/static/css/main.c48b42b7.css",
-    "main.js": "/cv-builder/static/js/main.7feafb55.js",
-    "static/js/703.76265c80.chunk.js": "/cv-builder/static/js/703.76265c80.chunk.js",
-    "static/js/117.bfee2aed.chunk.js": "/cv-builder/static/js/117.bfee2aed.chunk.js",
-    "static/media/ffs.jpg": "/cv-builder/static/media/ffs.ae24d9e7d192235efe6b.jpg",
+    "main.css": "/cv-builder/static/css/main.de78360a.css",
+    "main.js": "/cv-builder/static/js/main.5a7d0922.js",
     "index.html": "/cv-builder/index.html",
-    "main.c48b42b7.css.map": "/cv-builder/static/css/main.c48b42b7.css.map",
-    "main.7feafb55.js.map": "/cv-builder/static/js/main.7feafb55.js.map",
-    "703.76265c80.chunk.js.map": "/cv-builder/static/js/703.76265c80.chunk.js.map",
-    "117.bfee2aed.chunk.js.map": "/cv-builder/static/js/117.bfee2aed.chunk.js.map"
+    "main.de78360a.css.map": "/cv-builder/static/css/main.de78360a.css.map",
+    "main.5a7d0922.js.map": "/cv-builder/static/js/main.5a7d0922.js.map"
   },
   "entrypoints": [
-    "static/css/main.c48b42b7.css",
-    "static/js/main.7feafb55.js"
+    "static/css/main.de78360a.css",
+    "static/js/main.5a7d0922.js"
   ]
 }
