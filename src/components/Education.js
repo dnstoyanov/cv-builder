@@ -1,5 +1,4 @@
 import data from "../data/data.json";
-import { FaLocationDot } from "react-icons/fa6";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
 const Education = () => {
