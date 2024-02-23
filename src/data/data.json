@@ -13,6 +13,86 @@
   "work_history": [
     {
       "position": "Junior Front-End Developer",
+      "company": "Celtis LLC",
+      "start_date": "09/2023",
+      "end_date": "03/2024",
+      "employment_type": "Full Time",
+      "location": "Remote",
+      "jobDescription": ["Building Mobile and Web Applications"],
+      "projects": [
+        {
+          "project_name": "iClinic",
+          "project_url": null,
+          "start_date": "2023/01",
+          "end_date": "2024/03",
+          "project_description": [
+            "iClinic is a comprehensive healthcare management system designed to help managing a cosmetic clinic. It provides a wide range of features, including appointment scheduling, patient management, and inventory management, to streamline the clinic’s operations and enhance patient care."
+          ],
+          "projectResponsibilities": [
+            "Designing and implementing a highly intuitive and user-friendly front-end for the iClinic healthcare management system, leveraging React to align with the aesthetic and functional requirements of cosmetic clinics.",
+            "Building responsive and accessible UI components for features such as appointment scheduling, patient management, and inventory tracking, ensuring a seamless experience across desktop and mobile devices.",
+            "Integrating RESTful APIs for real-time data exchange between the iClinic front-end and backend services, enabling up-to-date patient information, appointment schedules, and inventory levels."
+          ],
+          "project_outcome": null,
+          "tech_stack": [
+            "React",
+            "TypeScript",
+            "CSS",
+            "REST/RESTful API's",
+            "Context API"
+          ],
+          "areas": ["eTrade"]
+        },
+        {
+          "project_name": "Reloaders",
+          "project_url": null,
+          "start_date": "2023/12",
+          "end_date": "2024/02",
+          "project_description": [
+            "Reloaders is a premier mobile app for Android and iOS, designed to effortlessly connect shooting enthusiasts with local ranges. It simplifies bookings and range management while also serving as a one-stop online shop for shooting accessories. This app enhances the shooting experience by streamlining the search and reservation process, and providing range owners with a powerful tool to manage their facilities and engage with customers."
+          ],
+          "projectResponsibilities": [
+            "Developing a custom UI based on client-provided designs, tailored specifically for the Reloaders app to ensure a seamless and engaging user experience.",
+            "Engineering high-quality, responsive, and accessible UI components, optimized for both Android and iOS platforms, to cater to the diverse needs of shooting enthusiasts and range owners.",
+            "Creating custom hooks, reusable components, and sophisticated business logic to meet the unique requirements of the Reloaders platform, thereby facilitating efficient bookings, management, and access to a comprehensive selection of shooting accessories."
+          ],
+          "project_outcome": null,
+          "tech_stack": [
+            "React Native",
+            "TypeScript",
+            "CSS",
+            "REST/RESTful API's",
+            "Context API"
+          ],
+          "areas": ["eTrade"]
+        },
+        {
+          "project_name": "eSimatic",
+          "project_url": null,
+          "start_date": "2023/10",
+          "end_date": "2023/12",
+          "project_description": [
+            "eSimatic emerged as a groundbreaking mobile application, strategically envisioned to transform the global telecommunications landscape by revolutionizing how eSIMs are distributed, sold, and managed. The application was developed with the foresight to tap into the burgeoning demand for a more agile, secure, and user-friendly method of managing mobile carrier services in an era where physical SIM cards are becoming obsolete."
+          ],
+          "projectResponsibilities": [
+            "Creating a custom UI provided by the client’s designs",
+            "Develop high-quality, responsive, and accessible UIs components",
+            "Creating custom hooks, reusable components and business logic to match the client’s requirements"
+          ],
+          "project_outcome": null,
+          "tech_stack": [
+            "React Native",
+            "TypeScript",
+            "CSS",
+            "REST/RESTful API's",
+            "Context API"
+          ],
+          "areas": ["Communication"]
+        }
+      ]
+    },
+    {
+      "position": "Junior Front-End Developer",
       "company": "NexGen LLC",
       "start_date": "01/2023",
       "end_date": "07/2023",
@@ -57,7 +137,7 @@
       "employment_type": "Full Time",
       "location": "Remote",
       "jobDescription": [
-        "As a Web UI/UX Designer specializing in automotive repair shop websites, my focus is on creating exceptional user experiences and visually appealing interfaces. I collaborate with clients, project managers, and developers to translate business requirements into compelling designs that showcase the services and brand identity of the repair shops. By conducting user research and utilizing industry best practices, I design intuitive and engaging user interfaces. I also optimize navigation, ensure responsiveness, and conduct usability testing to deliver seamless experiences. My goal is to enhance online presence and drive customer engagement through visually stunning and user-friendly designs."
+        "As a meticulous and innovative front-end developer, I bring over an year of focused experience in crafting responsive, user-focused web and mobile applications. My expertise spans HTML, CSS, JavaScript, and React, with a foundation built on a self-directed learning journey and targeted coursework. I am adept at transforming design blueprints into functional, dynamic web components, driven by a passion for utilizing the latest web technologies to enhance user experience. My proficiency extends to developing both React and React Native applications, with a keen eye for implementing UX principles to style web pages effectively. My approach combines technical skill with a creative mindset to push the boundaries of web development."
       ],
       "projects": [
         {
@@ -97,11 +177,11 @@
     },
     {
       "name": "English",
-      "level": "B2"
+      "level": "C1"
     },
     {
       "name": "Russian",
-      "level": "C2"
+      "level": "B2"
     }
   ],
   "certifications": [
@@ -129,9 +209,12 @@
       "programmingSkills": [
         "JavaScript",
         "React",
+        "React Native",
+        "Next.js",
         "HTML",
         "CSS",
         "SASS",
+        "Bootstrap",
         "TypeScript"
       ]
     },

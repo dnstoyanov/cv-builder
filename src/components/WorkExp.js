@@ -12,6 +12,7 @@ const WorkExp = () => {
               display: "flex",
               justifyContent: "space-between",
               marginTop: "24px",
+              alignItems: "flex-start",
             }}
           >
             <div style={{ fontSize: "18px" }}>{item.position}</div>
@@ -83,7 +84,7 @@ const WorkExp = () => {
                   <li key={responsibility}>{responsibility}</li>
                 ))}
               </ul>
-              <div style={{ display: "flex" }}>
+              <div style={{ display: "flex", flexWrap: "wrap" }}>
                 {project.tech_stack.map((tech) => (
                   <div
                     key={tech}
@@ -92,6 +93,7 @@ const WorkExp = () => {
                       padding: "0.7rem",
                       marginRight: "8px",
                       borderRadius: "20px",
+                      marginTop: "8px",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",

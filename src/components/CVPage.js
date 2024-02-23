@@ -13,16 +13,17 @@ export const CVPage = () => {
     <div
       id="cv-page"
       style={{
-        padding: "20px",
+        padding: "25px",
         backgroundColor: "#313131",
-        width: "210mm",
-        minHeight: "297mm",
         marginLeft: "auto",
         marginRight: "auto",
         boxSizing: "border-box",
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "2%",
       }}
     >
-      <div style={{ width: "100%" }}>
+      <div style={{ width: "100%", display: "flex" }}>
         <PersonalInfo />
       </div>
       <div
@@ -33,7 +34,7 @@ export const CVPage = () => {
           gap: "2%",
         }}
       >
-        <div style={{ flex: "0 0 67%" }}>
+        <div style={{ width: "65%" }}>
           <h2>Professional Experience</h2>
           <hr
             style={{
@@ -57,7 +58,7 @@ export const CVPage = () => {
             <Training />
           </div>
         </div>
-        <div style={{ flex: "0 0 31%" }}>
+        <div style={{ width: "33%" }}>
           <h2>Skills</h2>
           <hr
             style={{

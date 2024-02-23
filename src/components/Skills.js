@@ -1,4 +1,5 @@
 import data from "../data/data.json";
+import "./Skills.css";
 
 import {
   FaJira,
@@ -10,10 +11,11 @@ import {
   FaCss3Alt,
   FaSass,
   FaCode,
+  FaBootstrap,
 } from "react-icons/fa";
 import { SiMui, SiAdobe } from "react-icons/si";
 import { BiLogoFigma } from "react-icons/bi";
-import { SiTypescript } from "react-icons/si";
+import { SiTypescript, SiNextdotjs } from "react-icons/si";
 
 const Skills = () => {
   const skillIcons = {
@@ -23,6 +25,12 @@ const Skills = () => {
     React: (
       <FaReact size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
+    "React Native": (
+      <FaReact size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+    ),
+    "Next.js": (
+      <SiNextdotjs size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+    ),
     HTML: (
       <FaHtml5 size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
@@ -30,6 +38,9 @@ const Skills = () => {
       <FaCss3Alt size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
     ),
     SASS: <FaSass size={16} style={{ color: "#afcf46", marginRight: "4px" }} />,
+    Bootstrap: (
+      <FaBootstrap size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+    ),
     TypeScript: (
       <SiTypescript
         size={16}
@@ -57,6 +68,21 @@ const Skills = () => {
     ),
   };
 
+  const skillContainerStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    alignItems: "flex-start",
+    marginTop: "8px",
+  };
+
+  const skillItemStyle = {
+    display: "flex",
+    alignItems: "center",
+    marginRight: "16px",
+    marginBottom: "8px",
+    flexBasis: "auto",
+  };
+
   return (
     <>
       {data.skills.map((skill, index) => (
@@ -66,16 +92,9 @@ const Skills = () => {
               <div style={{ color: "#afcf46", fontWeight: "bold" }}>
                 Programming Skills
               </div>
-              <div style={{ display: "flex", marginTop: "8px" }}>
+              <div style={skillContainerStyle}>
                 {skill.programmingSkills.map((item) => (
-                  <div
-                    key={item}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      marginRight: "16px",
-                    }}
-                  >
+                  <div key={item} style={skillItemStyle}>
                     {skillIcons[item] || (
                       <FaCode
                         size={16}
@@ -93,16 +112,9 @@ const Skills = () => {
               <div style={{ color: "#afcf46", fontWeight: "bold" }}>
                 Additional Skills
               </div>
-              <div style={{ display: "flex", marginTop: "8px" }}>
+              <div style={skillContainerStyle}>
                 {skill.additionalSkills.map((item) => (
-                  <div
-                    key={item}
-                    style={{
-                      display: "flex",
-                      alignItems: "flex-start",
-                      marginRight: "16px",
-                    }}
-                  >
+                  <div key={item} style={skillItemStyle}>
                     {additionalSkillsIcons[item] || (
                       <FaCode
                         size={16}
@@ -120,15 +132,9 @@ const Skills = () => {
               <div style={{ color: "#afcf46", fontWeight: "bold" }}>
                 Soft Skills
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  marginTop: "8px",
-                  alignItems: "flex-start",
-                }}
-              >
+              <div style={skillContainerStyle}>
                 {skill.softSkills.map((item) => (
-                  <div key={item} style={{ width: "25%", marginRight: "15px" }}>
+                  <div key={item} style={skillItemStyle}>
                     {item}
                   </div>
                 ))}
