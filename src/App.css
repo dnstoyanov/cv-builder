@@ -6,6 +6,7 @@ body {
   font-size: 12pt;
   color: #e0e0e0;
   background-color: #313131;
+  line-height: 1.6;
 }
 
 a {
@@ -23,15 +24,31 @@ h5 {
 }
 
 h2 {
-  margin-top: 60px;
+  margin-top: 30px;
 }
-
-@media (max-width: 768px) {
-  .cv-page {
-    flex-direction: column;
+/* 
+@media print {
+  @page {
+    size: "210mm 297mm";
   }
-  .left-section,
-  .right-section {
+
+  body {
+    margin: 0;
+    padding: 0;
     width: 100%;
   }
-}
+
+  #cv-page {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 210mm;
+    padding: 20mm;
+  }
+
+  .content,
+  .header,
+  .footer {
+    box-sizing: border-box;
+    width: 100%;
+  }
+} */

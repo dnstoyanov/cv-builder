@@ -8,7 +8,7 @@
     "linkedin_url": "https://www.linkedin.com/in/dobromir-stoyanov/",
     "email_address": "dobromir.nikolov.s@gmail.com",
     "address": "Stara Zagora, Bulgaria",
-    "about_me": "A highly motivated and dedicated professional with 12 years of experience as a designer, I have recently transitioned into the field of front-end development through intensive self-learning and specialized courses. Proficient in HTML, CSS, JavaScript, and React, I bring a unique blend of design sensibility and technical skills to create visually stunning and user-friendly web applications. Seeking a junior front-end position to leverage my diverse background and contribute to innovative projects with a passion for continuous learning and growth."
+    "about_me": "As a detail-oriented and innovative Front-End Developer, I possess over one year of dedicated experience in developing responsive, user-centric web applications. Proficient in HTML, CSS, JavaScript, and React, my expertise extends to transforming complex design concepts into functional website components. My entry into front-end development was propelled by a rigorous, self-taught regimen and specialized coursework, underscoring my commitment to continuous learning and excellence.\n\nI excel in leveraging modern web technologies to craft seamless user experiences, demonstrating a deep understanding of user interface design and development principles. My proficiency in React and React Native enables me to create compelling web and mobile applications, emphasizing optimal user engagement through well-styled pages that adhere to the latest UX guidelines.\n\nPassionate about pushing the boundaries of web technology, I am committed to contributing to projects that enhance user interaction and satisfaction, driving forward the goals of a forward-thinking development team."
   },
   "work_history": [
     {
@@ -30,8 +30,8 @@
           ],
           "projectResponsibilities": [
             "Designing and implementing a highly intuitive and user-friendly front-end for the iClinic healthcare management system, leveraging React to align with the aesthetic and functional requirements of cosmetic clinics.",
-            "Building responsive and accessible UI components for features such as appointment scheduling, patient management, and inventory tracking, ensuring a seamless experience across desktop and mobile devices.",
-            "Integrating RESTful APIs for real-time data exchange between the iClinic front-end and backend services, enabling up-to-date patient information, appointment schedules, and inventory levels."
+            "Building responsive and accessible UI components for features such as appointment scheduling and  patient management, ensuring a seamless experience across desktop and mobile devices.",
+            "Integrating RESTful APIs for real-time data exchange between the iClinic front-end and backend services, enabling up-to-date patient information and appointment schedules."
           ],
           "project_outcome": null,
           "tech_stack": [
@@ -215,7 +215,8 @@
         "CSS",
         "SASS",
         "Bootstrap",
-        "TypeScript"
+        "TypeScript",
+        "Redux"
       ]
     },
     {

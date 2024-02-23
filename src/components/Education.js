@@ -9,7 +9,7 @@ const Education = () => {
           <div
             style={{
               display: "flex",
-              flexDirection: "row",
+              flexDirection: "column",
               justifyContent: "space-between",
             }}
           >
@@ -28,7 +28,7 @@ const Education = () => {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "flex-start",
-                marginTop: "24px",
+                marginTop: "10px",
               }}
             >
               <div style={{ display: "flex", alignItems: "center" }}>
@@ -42,7 +42,7 @@ const Education = () => {
               </div>
             </div>
           </div>
-          <div style={{ marginTop: "8px" }}>{item.degree}</div>
+          <div style={{ marginTop: "24px" }}>{item.degree}</div>
         </div>
       ))}
     </>

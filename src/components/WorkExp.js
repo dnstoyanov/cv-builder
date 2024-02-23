@@ -5,8 +5,8 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 const WorkExp = () => {
   return (
     <>
-      {data.work_history.map((item) => (
-        <div>
+      {data.work_history.map((item, index) => (
+        <div key={index}>
           <div
             style={{
               display: "flex",
@@ -61,15 +61,22 @@ const WorkExp = () => {
             {item.company}
           </div>
           <div style={{ marginTop: "16px" }}>{item.jobDescription}</div>
-          {item.projects.map((project) => (
+          {item.projects.map((project, projectIndex) => (
             <div
+              key={projectIndex}
               style={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "16px",
+                marginTop: "36px",
               }}
             >
-              <div style={{ textTransform: "uppercase", fontWeight: "bold" }}>
+              <div
+                style={{
+                  textTransform: "uppercase",
+                  fontWeight: "bold",
+                  textDecoration: "underline",
+                }}
+              >
                 {project.project_name}
               </div>
               <div style={{ marginTop: "15px" }}>
@@ -97,21 +104,30 @@ const WorkExp = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
+                      fontSize: "14px",
                     }}
                   >
                     {tech}
                   </div>
                 ))}
               </div>
+              <div
+                style={{
+                  marginTop: "36px",
+                  height: "0",
+                  borderBottom:
+                    projectIndex !== item.projects.length - 1
+                      ? "0.5px dashed white"
+                      : "none",
+                }}
+              ></div>
             </div>
           ))}
-          <div
-            style={{
-              marginTop: "36px",
-              height: "0",
-              borderBottom: "0.5px dashed white",
-            }}
-          ></div>
+          {index !== data.work_history.length - 1 && (
+            <div>
+              <hr style={{ border: "2px solid #afcf46", marginTop: "36px" }} />
+            </div>
+          )}
         </div>
       ))}
     </>

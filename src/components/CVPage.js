@@ -20,7 +20,9 @@ export const CVPage = () => {
         boxSizing: "border-box",
         display: "flex",
         flexWrap: "wrap",
-        gap: "2%",
+        gap: "4%",
+        // maxWidth: "297mm",
+        width: "100%",
       }}
     >
       <div style={{ width: "100%", display: "flex" }}>
@@ -31,10 +33,10 @@ export const CVPage = () => {
           width: "100%",
           marginTop: "10px",
           display: "flex",
-          gap: "2%",
+          gap: "4%",
         }}
       >
-        <div style={{ width: "65%" }}>
+        <div style={{ width: "63%" }}>
           <h2>Professional Experience</h2>
           <hr
             style={{

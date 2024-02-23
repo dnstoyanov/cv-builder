@@ -10,16 +10,14 @@ const PersonalInfo = () => {
     alignItems: "center",
   };
 
-  // Styles for the text container
   const textContainerStyle = {
     marginLeft: "32px",
-    maxWidth: "100%", // Prevents the text container from overflowing
-    flex: 1, // Allows this container to grow and fill available space
+    maxWidth: "100%",
+    flex: 1,
   };
 
-  // Styles for text elements to break long words
   const textStyle = {
-    overflowWrap: "break-word", // This ensures words break and wrap onto the next line
+    overflowWrap: "break-word",
     wordBreak: "break-word",
   };
 

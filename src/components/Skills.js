@@ -1,5 +1,4 @@
 import data from "../data/data.json";
-import "./Skills.css";
 
 import {
   FaJira,
@@ -15,6 +14,7 @@ import {
 } from "react-icons/fa";
 import { SiMui, SiAdobe } from "react-icons/si";
 import { BiLogoFigma } from "react-icons/bi";
+import { TbBrandRedux } from "react-icons/tb";
 import { SiTypescript, SiNextdotjs } from "react-icons/si";
 
 const Skills = () => {
@@ -43,6 +43,12 @@ const Skills = () => {
     ),
     TypeScript: (
       <SiTypescript
+        size={16}
+        style={{ color: "#afcf46", marginRight: "4px" }}
+      />
+    ),
+    Redux: (
+      <TbBrandRedux
         size={16}
         style={{ color: "#afcf46", marginRight: "4px" }}
       />
