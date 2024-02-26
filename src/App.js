@@ -6,9 +6,9 @@ import { useReactToPrint } from "react-to-print";
 function App() {
   const cvRef = useRef();
 
-  // const handlePrint = useReactToPrint({
-  //   content: () => cvRef.current,
-  // });
+  const handlePrint = useReactToPrint({
+    content: () => cvRef.current,
+  });
 
   return (
     <div className="App">
@@ -16,7 +16,7 @@ function App() {
         <div ref={cvRef}>
           <CVPage />
         </div>
-        {/* <button onClick={handlePrint}>Print CV</button> */}
+        <button onClick={handlePrint}>Print CV</button>
       </header>
     </div>
   );

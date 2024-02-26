@@ -6,11 +6,11 @@ const Training = () => {
       {data.training.map((course) => (
         <div key={course.id}>
           <div
-            style={{ fontSize: "18px", color: "#afcf46", marginTop: "24px" }}
+            style={{ fontSize: "16pt", color: "#268de0", marginTop: "24px" }}
           >
             {course.name}
           </div>
-          <div>{course.description}</div>
+          <div className="text-content">{course.description}</div>
         </div>
       ))}
     </>

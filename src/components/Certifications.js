@@ -6,11 +6,11 @@ const Certifications = () => {
       {data.certifications.map((item) => (
         <div key={item.name}>
           <div
-            style={{ fontSize: "18px", color: "#afcf46", marginTop: "24px" }}
+            style={{ fontSize: "16pt", color: "#268de0", marginTop: "24px" }}
           >
             {item.name}
           </div>
-          {item.organisation}
+          <div className="text-content">{item.organisation}</div>
         </div>
       ))}
     </>

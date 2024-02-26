@@ -10,100 +10,104 @@ import PersonalInfo from "./PersonalInfo";
 
 export const CVPage = () => {
   return (
-    <div
-      id="cv-page"
-      style={{
-        padding: "25px",
-        backgroundColor: "#313131",
-        marginLeft: "auto",
-        marginRight: "auto",
-        boxSizing: "border-box",
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "4%",
-        // maxWidth: "297mm",
-        width: "100%",
-      }}
-    >
-      <div style={{ width: "100%", display: "flex" }}>
-        <PersonalInfo />
-      </div>
+    <div className="print-wrapper">
       <div
+        id="cv-page"
         style={{
-          width: "100%",
-          marginTop: "10px",
+          // padding: "20px",
+          // backgroundColor: "#313131",
+          backgroundColor: "#fff",
+          marginLeft: "auto",
+          marginRight: "auto",
+          boxSizing: "border-box",
           display: "flex",
-          gap: "4%",
+          flexWrap: "wrap",
+          // width: "100%",
+          width: "210mm",
         }}
       >
-        <div style={{ width: "63%" }}>
-          <h2>Professional Experience</h2>
-          <hr
-            style={{
-              backgroundColor: "white",
-              height: "0",
-              borderBottom: "0.5px solid white",
-            }}
-          />
-          <div>
-            <WorkExp />
-          </div>
-          <h2>Training / Courses</h2>
-          <hr
-            style={{
-              backgroundColor: "white",
-              height: "0",
-              borderBottom: "0.5px solid white",
-            }}
-          />
-          <div>
-            <Training />
-          </div>
-        </div>
-        <div style={{ width: "33%" }}>
-          <h2>Skills</h2>
-          <hr
-            style={{
-              backgroundColor: "white",
-              height: "0",
-              borderBottom: "0.5px solid white",
-            }}
-          />
-          <div>
+        <div
+          className="section"
+          style={{ width: "100%", display: "flex", flexDirection: "column" }}
+        >
+          <PersonalInfo />
+          <div style={{ marginTop: "45px" }}>
+            <h2>Skills</h2>
+            <hr
+              style={{
+                backgroundColor: "white",
+                height: "0",
+                borderBottom: "0.5px solid white",
+              }}
+            />
             <Skills />
           </div>
-          <h2>Certifications</h2>
-          <hr
-            style={{
-              backgroundColor: "white",
-              height: "0",
-              borderBottom: "0.5px solid white",
-            }}
-          />
-          <div>
-            <Certifications />
+        </div>
+
+        <div
+          style={{
+            width: "100%",
+            marginTop: "10px",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <div className="section">
+            <h2>Professional Experience</h2>
+            <hr
+              style={{
+                backgroundColor: "white",
+                height: "0",
+                borderBottom: "0.5px solid white",
+              }}
+            />
+            <WorkExp />
           </div>
-          <h2>Languages</h2>
-          <hr
-            style={{
-              backgroundColor: "white",
-              height: "0",
-              borderBottom: "0.5px solid white",
-            }}
-          />
-          <div>
-            <Languages />
-          </div>
-          <h2>Education</h2>
-          <hr
-            style={{
-              backgroundColor: "white",
-              height: "0",
-              borderBottom: "0.5px solid white",
-            }}
-          />
-          <div>
-            <Education />
+          <div className="section">
+            <div>
+              <h2>Certifications</h2>
+              <hr
+                style={{
+                  backgroundColor: "white",
+                  height: "0",
+                  borderBottom: "0.5px solid white",
+                }}
+              />
+              <Certifications />
+            </div>
+            <div style={{ marginTop: "50px" }}>
+              <h2>Training / Courses</h2>
+              <hr
+                style={{
+                  backgroundColor: "white",
+                  height: "0",
+                  borderBottom: "0.5px solid white",
+                }}
+              />
+              <Training />
+            </div>
+            <div style={{ marginTop: "50px" }}>
+              <h2>Languages</h2>
+              <hr
+                style={{
+                  backgroundColor: "white",
+                  height: "0",
+                  borderBottom: "0.5px solid white",
+                }}
+              />
+              <Languages />
+            </div>
+            <div style={{ marginTop: "50px" }}>
+              <h2>Education</h2>
+              <hr
+                style={{
+                  backgroundColor: "white",
+                  height: "0",
+                  borderBottom: "0.5px solid white",
+                }}
+              />
+              <Education />
+            </div>
           </div>
         </div>
       </div>

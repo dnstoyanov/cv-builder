@@ -16,51 +16,54 @@ const WorkExp = () => {
             }}
           >
             <div style={{ fontSize: "18px" }}>{item.position}</div>
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <span style={{ fontSize: "14px", marginRight: "4px" }}>
+            <div
+              style={{ display: "flex", alignItems: "center", lineHeight: 1 }}
+            >
+              <span style={{ fontSize: "14px" }}>
                 <FaRegCalendarAlt
-                  size={14}
+                  size={16}
                   style={{
-                    color: "#afcf46",
+                    color: "#268de0",
                     marginRight: "4px",
                     marginLeft: "35px",
                   }}
                 />
               </span>
-              <span style={{ fontSize: "14px" }}>{item.start_date}</span>
+              <span style={{ fontSize: "15px" }}>{item.start_date}</span>
               <span style={{ margin: "0 4px" }}>-</span>
-              <span style={{ fontSize: "14px" }}>{item.end_date}</span>
+              <span style={{ fontSize: "15px" }}>{item.end_date}</span>
               <span
                 style={{
-                  color: "#afcf46",
-                  marginRight: "4px",
+                  color: "#268de0",
                   marginLeft: "35px",
                 }}
               >
                 <FaLocationDot
-                  size={14}
+                  size={16}
                   style={{
-                    color: "#afcf46",
+                    color: "#268de0",
                     marginRight: "4px",
                     marginLeft: "35px",
                   }}
                 />
               </span>
-              <span style={{ fontSize: "14px" }}>{item.location}</span>
+              <span style={{ fontSize: "15px" }}>{item.location}</span>
             </div>
           </div>
           <div
             style={{
-              fontSize: "18px",
+              fontSize: "15pt",
               fontWeight: "bold",
-              color: "#afcf46",
+              color: "#268de0",
               textTransform: "uppercase",
               marginTop: "16px",
             }}
           >
             {item.company}
           </div>
-          <div style={{ marginTop: "16px" }}>{item.jobDescription}</div>
+          <div className="text-content" style={{ marginTop: "16px" }}>
+            {item.jobDescription}
+          </div>
           {item.projects.map((project, projectIndex) => (
             <div
               key={projectIndex}
@@ -80,7 +83,9 @@ const WorkExp = () => {
                 {project.project_name}
               </div>
               <div style={{ marginTop: "15px" }}>
-                {project.project_description}
+                <div className="text-content">
+                  {project.project_description}
+                </div>
               </div>
               <div>{project.project_outcome}</div>
               <div style={{ fontWeight: "bold", marginTop: "15px" }}>
@@ -88,7 +93,9 @@ const WorkExp = () => {
               </div>
               <ul>
                 {project.projectResponsibilities.map((responsibility) => (
-                  <li key={responsibility}>{responsibility}</li>
+                  <li key={responsibility}>
+                    <div className="text-content">{responsibility}</div>
+                  </li>
                 ))}
               </ul>
               <div style={{ display: "flex", flexWrap: "wrap" }}>
@@ -96,7 +103,10 @@ const WorkExp = () => {
                   <div
                     key={tech}
                     style={{
-                      border: "2px solid #afcf46",
+                      // border: "2px solid #268de0",
+                      background: " #268de0",
+                      color: "white",
+                      fontWeight: "bold",
                       padding: "0.7rem",
                       marginRight: "8px",
                       borderRadius: "20px",
@@ -104,7 +114,7 @@ const WorkExp = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      fontSize: "14px",
+                      fontSize: "13pt",
                     }}
                   >
                     {tech}
@@ -125,7 +135,7 @@ const WorkExp = () => {
           ))}
           {index !== data.work_history.length - 1 && (
             <div>
-              <hr style={{ border: "2px solid #afcf46", marginTop: "36px" }} />
+              <hr style={{ border: "2px solid #268de0", marginTop: "36px" }} />
             </div>
           )}
         </div>

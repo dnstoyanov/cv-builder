@@ -4,11 +4,12 @@
     "personal_image": "../assets/images/cat.jpg",
     "current_position": "Junior Front-End Developer",
     "image": "",
+    "phone": "+359 876 961 085",
     "github_url": "https://github.com/dnstoyanov",
     "linkedin_url": "https://www.linkedin.com/in/dobromir-stoyanov/",
     "email_address": "dobromir.nikolov.s@gmail.com",
     "address": "Stara Zagora, Bulgaria",
-    "about_me": "As a detail-oriented and innovative Front-End Developer, I possess over one year of dedicated experience in developing responsive, user-centric web applications. Proficient in HTML, CSS, JavaScript, and React, my expertise extends to transforming complex design concepts into functional website components. My entry into front-end development was propelled by a rigorous, self-taught regimen and specialized coursework, underscoring my commitment to continuous learning and excellence.\n\nI excel in leveraging modern web technologies to craft seamless user experiences, demonstrating a deep understanding of user interface design and development principles. My proficiency in React and React Native enables me to create compelling web and mobile applications, emphasizing optimal user engagement through well-styled pages that adhere to the latest UX guidelines.\n\nPassionate about pushing the boundaries of web technology, I am committed to contributing to projects that enhance user interaction and satisfaction, driving forward the goals of a forward-thinking development team."
+    "about_me": "As a detail-oriented and innovative Front-End Developer with over a year of experience, I specialize in creating responsive web applications that focus on user engagement. Skilled in HTML, CSS, JavaScript, and React, I have a strong foundation in converting complex designs into functional website components. My journey in front-end development began with self-directed learning and specialized courses, highlighting my dedication to mastery and innovation. I am adept at using modern web technologies to enhance user experiences, with a keen understanding of UI design principles. My expertise in React and React Native allows me to develop engaging web and mobile applications that meet the latest UX standards. I am passionate about utilizing web technology to improve user interactions, aiming to contribute significantly to the success of a progressive development team."
   },
   "work_history": [
     {
@@ -49,12 +50,12 @@
           "start_date": "2023/12",
           "end_date": "2024/02",
           "project_description": [
-            "Reloaders is a premier mobile app for Android and iOS, designed to effortlessly connect shooting enthusiasts with local ranges. It simplifies bookings and range management while also serving as a one-stop online shop for shooting accessories. This app enhances the shooting experience by streamlining the search and reservation process, and providing range owners with a powerful tool to manage their facilities and engage with customers."
+            "Reloaders is an app for shooting enthusiasts. It enables users to track their shooting performance, simplifying the entire shooting experience in one mobile platform.  The app provides a range of features, including shot tracking, performance analysis to enhance the shooting experience for users."
           ],
           "projectResponsibilities": [
-            "Developing a custom UI based on client-provided designs, tailored specifically for the Reloaders app to ensure a seamless and engaging user experience.",
-            "Engineering high-quality, responsive, and accessible UI components, optimized for both Android and iOS platforms, to cater to the diverse needs of shooting enthusiasts and range owners.",
-            "Creating custom hooks, reusable components, and sophisticated business logic to meet the unique requirements of the Reloaders platform, thereby facilitating efficient bookings, management, and access to a comprehensive selection of shooting accessories."
+            "Developing a custom UI based on client-provided designs, tailored specifically for the Reloaders app to ensure a seamless and engaging user experience, optimised for both Android and iOS platforms.",
+            "Creating custom hooks, reusable components, and sophisticated business logic to meet the requirements of the Reloaders platform",
+            "Integratin RESTful APIs for real-time and offline data exchange between the Reloaders front-end and backend services, ensuring a seamless and responsive user experience."
           ],
           "project_outcome": null,
           "tech_stack": [
@@ -72,7 +73,7 @@
           "start_date": "2023/10",
           "end_date": "2023/12",
           "project_description": [
-            "eSimatic emerged as a groundbreaking mobile application, strategically envisioned to transform the global telecommunications landscape by revolutionizing how eSIMs are distributed, sold, and managed. The application was developed with the foresight to tap into the burgeoning demand for a more agile, secure, and user-friendly method of managing mobile carrier services in an era where physical SIM cards are becoming obsolete."
+            "eSimatic emerged as a groundbreaking mobile application, strategically envisioned to transform the global telecommunications landscape by revolutionizing how eSIMs are distributed, sold, and managed. The application has been designed to provide a seamless and secure experience for both end-users and service providers, offering a range of features such as eSIM activation, management, and distribution."
           ],
           "projectResponsibilities": [
             "Creating a custom UI provided by the client’s designs",
@@ -211,12 +212,13 @@
         "React",
         "React Native",
         "Next.js",
+        "TypeScript",
+        "Redux",
         "HTML",
         "CSS",
         "SASS",
         "Bootstrap",
-        "TypeScript",
-        "Redux"
+        "Tailwind CSS"
       ]
     },
     {

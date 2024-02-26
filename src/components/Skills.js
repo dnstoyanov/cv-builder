@@ -13,64 +13,70 @@ import {
   FaBootstrap,
 } from "react-icons/fa";
 import { SiMui, SiAdobe } from "react-icons/si";
-import { BiLogoFigma } from "react-icons/bi";
+import { BiLogoFigma, BiLogoTailwindCss } from "react-icons/bi";
 import { TbBrandRedux } from "react-icons/tb";
 import { SiTypescript, SiNextdotjs } from "react-icons/si";
 
 const Skills = () => {
   const skillIcons = {
     JavaScript: (
-      <FaJs size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <FaJs size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
     React: (
-      <FaReact size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <FaReact size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
     "React Native": (
-      <FaReact size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <FaReact size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
     "Next.js": (
-      <SiNextdotjs size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <SiNextdotjs size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
     HTML: (
-      <FaHtml5 size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <FaHtml5 size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
     CSS: (
-      <FaCss3Alt size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <FaCss3Alt size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
-    SASS: <FaSass size={16} style={{ color: "#afcf46", marginRight: "4px" }} />,
+    SASS: <FaSass size={22} style={{ color: "#268de0", marginRight: "6px" }} />,
     Bootstrap: (
-      <FaBootstrap size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <FaBootstrap size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
     TypeScript: (
       <SiTypescript
-        size={16}
-        style={{ color: "#afcf46", marginRight: "4px" }}
+        size={22}
+        style={{ color: "#268de0", marginRight: "6px" }}
       />
     ),
     Redux: (
       <TbBrandRedux
-        size={16}
-        style={{ color: "#afcf46", marginRight: "4px" }}
+        size={22}
+        style={{ color: "#268de0", marginRight: "6px" }}
+      />
+    ),
+    "Tailwind CSS": (
+      <BiLogoTailwindCss
+        size={22}
+        style={{ color: "#268de0", marginRight: "6px" }}
       />
     ),
   };
 
   const additionalSkillsIcons = {
     "Adobe Creative Suite": (
-      <SiAdobe size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <SiAdobe size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
     Git: (
-      <FaGithub size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <FaGithub size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
-    Jira: <FaJira size={16} style={{ color: "#afcf46", marginRight: "4px" }} />,
+    Jira: <FaJira size={22} style={{ color: "#268de0", marginRight: "6px" }} />,
     Agile: (
-      <FaTasks size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <FaTasks size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
     Figma: (
-      <BiLogoFigma size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <BiLogoFigma size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
     "Material UI": (
-      <SiMui size={16} style={{ color: "#afcf46", marginRight: "4px" }} />
+      <SiMui size={22} style={{ color: "#268de0", marginRight: "6px" }} />
     ),
   };
 
@@ -95,7 +101,13 @@ const Skills = () => {
         <div key={index}>
           {skill.programmingSkills && (
             <div style={{ marginTop: "24px" }}>
-              <div style={{ color: "#afcf46", fontWeight: "bold" }}>
+              <div
+                style={{
+                  color: "#268de0",
+                  fontWeight: "bold",
+                  fontSize: "16pt",
+                }}
+              >
                 Programming Skills
               </div>
               <div style={skillContainerStyle}>
@@ -104,18 +116,24 @@ const Skills = () => {
                     {skillIcons[item] || (
                       <FaCode
                         size={16}
-                        style={{ color: "#afcf46", marginRight: "4px" }}
+                        style={{ color: "#268de0", marginRight: "4px" }}
                       />
                     )}{" "}
-                    {item}
+                    <div className="text-content">{item}</div>
                   </div>
                 ))}
               </div>
             </div>
           )}
           {skill.additionalSkills && (
-            <div style={{ marginTop: "24px" }}>
-              <div style={{ color: "#afcf46", fontWeight: "bold" }}>
+            <div style={{ marginTop: "45px" }}>
+              <div
+                style={{
+                  color: "#268de0",
+                  fontWeight: "bold",
+                  fontSize: "16pt",
+                }}
+              >
                 Additional Skills
               </div>
               <div style={skillContainerStyle}>
@@ -124,24 +142,30 @@ const Skills = () => {
                     {additionalSkillsIcons[item] || (
                       <FaCode
                         size={16}
-                        style={{ color: "#afcf46", marginRight: "4px" }}
+                        style={{ color: "#268de0", marginRight: "4px" }}
                       />
                     )}{" "}
-                    {item}
+                    <div className="text-content">{item}</div>
                   </div>
                 ))}
               </div>
             </div>
           )}
           {skill.softSkills && (
-            <div style={{ marginTop: "24px" }}>
-              <div style={{ color: "#afcf46", fontWeight: "bold" }}>
+            <div style={{ marginTop: "45px" }}>
+              <div
+                style={{
+                  color: "#268de0",
+                  fontWeight: "bold",
+                  fontSize: "16pt",
+                }}
+              >
                 Soft Skills
               </div>
               <div style={skillContainerStyle}>
                 {skill.softSkills.map((item) => (
                   <div key={item} style={skillItemStyle}>
-                    {item}
+                    <div className="text-content">{item}</div>
                   </div>
                 ))}
               </div>

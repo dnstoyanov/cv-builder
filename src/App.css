@@ -4,9 +4,10 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 12pt;
-  color: #e0e0e0;
-  background-color: #313131;
-  line-height: 1.6;
+  /* color: #e0e0e0; */
+  color: #313131;
+  /* background-color: #313131; */
+  line-height: 1.4;
 }
 
 a {
@@ -23,32 +24,39 @@ h5 {
   padding: 0;
 }
 
-h2 {
-  margin-top: 30px;
+.text-content {
+  font-size: 13pt;
 }
-/* 
+
 @media print {
   @page {
-    size: "210mm 297mm";
+    size: A4;
+    margin: 10mm;
+  }
+  html,
+  body {
+    width: 100%;
+    min-height: 297mm;
+    margin: 0;
+    padding: 0px;
+    box-shadow: none;
   }
 
-  body {
+  .print-wrapper,
+  .page-content {
+    min-height: 297mm;
+    background: #313131;
+  }
+
+  .section {
     margin: 0;
     padding: 0;
-    width: 100%;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    orphans: 3;
+    widows: 3;
   }
-
-  #cv-page {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 210mm;
-    padding: 20mm;
+  .section-break-before {
+    page-break-before: always;
   }
-
-  .content,
-  .header,
-  .footer {
-    box-sizing: border-box;
-    width: 100%;
-  }
-} */
+}

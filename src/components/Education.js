@@ -15,8 +15,8 @@ const Education = () => {
           >
             <div
               style={{
-                fontSize: "18px",
-                color: "#afcf46",
+                fontSize: "16pt",
+                color: "#268de0",
                 textTransform: "uppercase",
                 marginTop: "24px",
               }}
@@ -31,18 +31,22 @@ const Education = () => {
                 marginTop: "10px",
               }}
             >
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{ display: "flex", alignItems: "center", lineHeight: 1 }}
+              >
                 <FaRegCalendarAlt
-                  size={14}
-                  style={{ color: "#afcf46", marginRight: "4px" }}
+                  size={16}
+                  style={{ color: "#268de0", marginRight: "4px" }}
                 />
-                <span style={{ fontSize: "14px" }}>{item.start_date}</span>
+                <span style={{ fontSize: "15px" }}>{item.start_date}</span>
                 <span style={{ margin: "0 4px" }}>-</span>
-                <span style={{ fontSize: "14px" }}>{item.end_date}</span>
+                <span style={{ fontSize: "15px" }}>{item.end_date}</span>
               </div>
             </div>
           </div>
-          <div style={{ marginTop: "24px" }}>{item.degree}</div>
+          <div className="text-content" style={{ marginTop: "24px" }}>
+            {item.degree}
+          </div>
         </div>
       ))}
     </>
